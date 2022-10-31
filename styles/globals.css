@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center h-9 w-9 mt-2 mb-2 mx-auto rounded-3xl text-white bg-gray-600
+    hover:bg-slate-300 hover:text-green-600  hover:rounded-xl transition-all duration-300 ease-linear;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold
+    transition-all duration-100 scale-0 origin-left;
+  }
+}
