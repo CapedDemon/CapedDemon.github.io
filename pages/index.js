@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import Header from "./Header";
+// import Intro from "./Intro";
 
 export default function Home() {
   return (
@@ -16,21 +17,9 @@ export default function Home() {
       <main>
         <section className="bg-stone-800 h-screen px-10">
           <Header />
-          hello
+          {/* <Intro /> */}
         </section>
       </main>
     </div>
   );
 }
-
-const SideBarIcon = ({icon, text}) => {
-  return (
-  <div className="sidebar-icon group">
-    {icon}
-
-    <span className="sidebar-tooltip group-hover:scale-100">
-      {text}
-    </span>
-  </div> 
-  );
-};

@@ -18,8 +18,16 @@ module.exports = {
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 
+      mdd: {max: "600px"},
+
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
+      ssm: {max: "560px"},
+      sms: { max: "520px" },
+      xlsm: { max: "440px" },
+      lgsm: { max: "340px" },
+
+      invmd : {min: "767px"},
     },
     extend: {},
   },
