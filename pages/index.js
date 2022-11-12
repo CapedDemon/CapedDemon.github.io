@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import Header from "./Header";
-// import Intro from "./Intro";
+import Intro from "./Intro";
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className="bg-stone-800 h-screen px-10">
-          <Header />
-          {/* <Intro /> */}
+        <section className="bg-stone-800 h-screen px-10 snap-y snap-mandatory overflow-scroll z-0">
+          <Header className="snap-center" />
+          <Intro />
         </section>
       </main>
     </div>

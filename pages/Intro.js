@@ -1,27 +1,21 @@
 import React from "react";
-import anime from "animejs/lib/anime.es.js";
-import styles from "animejs/lib/anime.min.js";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import BgAnime from "./BgAnime";
 
 function Intro() {
+  const [text, count] = useTypewriter({
+    words: ["Hi ALL!", "Coder", "Learner", "Creator", "A Friend"],
+    loop: true,
+    delaySpeed: 2000,
+  });
   return (
-    anime({
-  targets: '.function-based-values-demo .el',
-  translateX: function(el) {
-    return el.getAttribute('data-x');
-  },
-  translateY: function(el, i) {
-    return 50 + (-50 * i);
-  },
-  scale: function(el, i, l) {
-    return (l - i) + .25;
-  },
-  rotate: function() { return anime.random(-360, 360); },
-  borderRadius: function() { return ['50%', anime.random(10, 35) + '%']; },
-  duration: function() { return anime.random(1200, 1800); },
-  delay: function() { return anime.random(0, 400); },
-  direction: 'alternate',
-  loop: true
-})
+    <div className="h-screen flex flex-col items-center justify-center space-y-8 mb-20 overflow-hidden max-w-7xl mx-auto text-white text-center">
+      <BgAnime/>
+      <h1>
+        <span>{text}</span>
+        <Cursor cursorColor="#F7Ab0A" />
+      </h1>
+    </div>
   );
 }
 

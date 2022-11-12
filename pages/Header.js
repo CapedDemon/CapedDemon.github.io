@@ -37,11 +37,17 @@ export function Header() {
               : `flex items-center flex-row justify-start md:absolute md:my-10 md:flex-col md:pl-0 pl-7 w-full md:w-auto md:opacity-0 md:py-2 md:right-28 mdd:right-16 sms:right-10 xlsm:right-3 lgsm:right-0 ssm:right-14  md:transition-all md:ease-in md:duration-400 `
           }
         >
-          <li className="ml-5 text-lg sm:text-sm p-2 rounded-md font-semibold hover:underline hover:font-semibold duration-300 md:my-0 ">
+          <li className="rounded-md md:ease-in-out   md:hover:bg-zinc-600 md:mb-2 md:rounded-none md:w-full md:right-2.5 md:relative ml-5 text-lg sm:text-sm p-2 font-semibold hover:underline hover:font-semibold duration-300 md:my-0 ">
             Projects
           </li>
-          <li className="ml-5 text-lg sm:text-sm bg-stone-900 p-2 rounded-md hover:bg-slate-100 hover:text-slate-800 hover:font-semibold duration-300 md:my-0">
-            <FaGithub />
+          <li
+            className={
+              navbar
+                ? "md:hover:bg-zinc-600 md:rounded-none ml-5 text-lg sm:text-sm md:right-2.5 md:relative p-2 rounded-m md:w-full hover:font-semibold duration-300 md:my-0"
+                : "md:hover:bg-zinc-600 md:rounded-none ml-5 text-lg sm:text-sm bg-stone-900 p-2 rounded-md hover:bg-slate-100 hover:text-slate-800 hover:font-semibold duration-300 md:my-0"
+            }
+          >
+            {navbar ? "Source" : <FaGithub />}
           </li>
         </ul>
       </motion.div>
