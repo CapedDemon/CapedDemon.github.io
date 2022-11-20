@@ -1,11 +1,6 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BgAnime from "./BgAnime";
-import { Gloria_Hallelujah } from '@next/font/google' 
-
-const gloria = Gloria_Hallelujah({
-  weight: ['400'],
-});
 
 function Intro() {
   const [text, count] = useTypewriter({
@@ -22,13 +17,13 @@ function Intro() {
         alt=""
       />
       <div className="z-10">
-        <h2 className="pb-2 tracking-[10px] text-lg text-gray-400">
+        <h2 className="pb-2 tracking-[10px] font-caveat text-lg text-gray-400">
           <span>{text}</span>
           <Cursor cursorColor="#F7Ab0A" />
         </h2>
         <h1 className="text-8xl">
-          <span className={gloria.className}>Shreejan Dolai</span>
-          <Cursor cursorColor="#F7Ab0A" />
+          <span className="font-rubikdirt">Shreejan Dolai</span>
+          
         </h1>
       </div>
     </div>

@@ -29,10 +29,13 @@ module.exports = {
 
       invmd: { min: "767px" },
     },
-    extend: {
-      fontFamily: {
-        gloria: ["Gloria Hallelujah", "cursive"],
-      },
+    extend: {},
+    fontFamily: {
+      caveat: ["Caveat", "cursive"],
+      pacifico: ["Pacifico", "cursive"],
+      gloria: ["Gloria Hallelujah", "cursive"],
+      shadow: ["Shadows Into Light", "cursive"],
+      rubikdirt: ["Rubik Dirt", "cursive"],
     },
   },
 };
