@@ -12,6 +12,18 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        Caveat: ["Caveat", "cursive"],
+        PermanentMarker: ["Permanent Marker", "cursive"],
+        TiltPrism: ["Tilt Prism", "cursive"],
+        AmantiSc: ["Amatic SC", "cursive"],
+        BrunoAce: ["Bruno Ace SC", "cursive"],
+      },
+      screens: {
+        xs: "450px",
+        llg: "1100px",
+        xlg: "1200px"
+      },
     },
   },
   plugins: [],
