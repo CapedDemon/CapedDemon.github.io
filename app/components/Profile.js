@@ -40,7 +40,7 @@ const Profile = () => {
         </div>
         <div className="ml-1">
           <h2 className={`subText font-AmantiSc`}>
-            Hi, there 🖐 I'm
+            Hi, there 🖐 I# m
             <br />
           </h2>
           <h1 className={`headText xs:text-[50px] font-TiltPrism`}>

@@ -148,6 +148,7 @@ const RotatingAtom = (props) => {
         {nucleusData.map((item) => {
           return (
             <SphereMakers
+            key={1}
               color={item.color}
               radius={item.radius}
               xPos={item.xPos}
@@ -162,6 +163,7 @@ const RotatingAtom = (props) => {
         {electronData.map((electrons) => {
           return (
             <SphereMakers
+            key={2}
               electron={electrons.electron}
               radius={electrons.radius}
               xPos={electrons.xPos}
