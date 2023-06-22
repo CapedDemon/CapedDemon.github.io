@@ -71,6 +71,15 @@
       rgba(60, 51, 80, 0) 100%
     );
   }
+  .yellow-gradient {
+    background: #deed14;
+    background: linear-gradient(-90deg, #deed14 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(
+      -90deg,
+      #deed14 0%,
+      rgba(60, 51, 80, 0) 100%
+    );
+  }
 
   .green-text-gradient {
     background: #11998e;

@@ -32,8 +32,8 @@ const Contact = () => {
 
   return (
     <div
-      id="#contact"
-      className="h-full relative mt-32 top-[1150px] xs:top-[1200px] md:top-[1200px] lg:top-[1200px] mb-48"
+      id="contact"
+      className="h-full relative mt-32 top-[800px] xs:top-[900px] md:top-[850px] lg:top-[850px] mb-48"
     >
       <div className="w-[100%] h-[100%] flex justify-between gap-[50px] ">
         <div className="flex-1 flex items-center md:justify-items-end justify-center flex-col gap-[25px] ">
